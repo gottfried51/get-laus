@@ -1,0 +1,157 @@
+#
+#                 [[ LAUS ]]
+#
+# Copyright (c) 2013 Reinhart Fink.
+#Shell Skript - Copyright (c) 2013 Reinhart Fink.
+#
+# This code is distributed under the GNU General Public License 
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# version 2, as published by the Free Software Foundation.
+# 
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 675 Mass Ave, Cambridge, MA 02139, USA.
+# 
+#
+#
+# Shell Variables sourced from /etc/default/laus-setup
+## ENABLE_AUTOUPDATE="yes"
+# Server hosting all LAUS - scripts:
+## LAUS_SERVER="laus1"
+# Rootpath,where LAUS - directory is stored:
+## PATH_ON_LAUS_SERVER="/autoinstall"
+# Directory, relativ to PATH_ON_LAUS_SERVER, where laus_server.sh - script is stored:
+## LAUS_PATH="laus"
+# Mountpoint on client, for Serverdirectory
+## MOUNT_PATH_ON_CLIENT="/opt/autoinstall"
+# Path, where updatelogfiles are written to:
+## UPDATE_LOG_DIR="/var/log/laus"
+
+#################################################################
+#################################################################
+
+#
+# HOSTNAME;HOSTCLASS;SUBHOSTCLASS;SUSUBHOSTCLASS
+# for awk
+# $1; $2; $3; $4
+#
+####################################################################
+
+
+####################################################################
+####################################################################
+## Floor 00 Floor 00 Floor 00 Floor 00 Floor 00 Floor 00 Floor 00 ##
+####################################################################
+
+## Raum 001 Raum 001 Raum 001 Raum 001 Raum 001 Raum 001 Raum 001 ##
+
+r001;UBUNTU1204 R001 VMS ZUPDATE;GNOME3
+
+r001pc50;BEAMER
+                                                                
+## Einzelgeräte Floor 00 Einzelgeräte Floor 00 Einzelgeräte ########
+
+stupla01;UBUNTU1204 STUPLA
+
+r007pc7;UBUNTU1204 ZUPDATE
+
+joomla01;UBUNTU1204 ZUPDATE
+
+
+## Maschine to organize USER "user" Profil
+worker02;UBUNTU1204 ZUPDATE TEST
+
+## Test
+
+r099pc01;UBUNTU1204 R001 VMS TEST;GNOME3
+
+r099pc02;UBUNTU1204
+
+r099pc03;UBUNTU1204
+
+r099pc05;UBUNTU1204 ZUPDATE TEST
+
+r099pc06;UBUNTU1204 ZUPDATE TEST
+
+## Test                                                                
+                                                                  ##
+####################################################################
+
+
+####################################################################
+####################################################################
+## Floor 01 Floor 01 Floor 01 Floor 01 Floor 01 Floor 01 Floor 01 ##
+####################################################################
+####################################################################
+
+## Einzelgeräte Floor 01 Einzelgeräte Floor 01 Einzelgeräte ########
+
+## Klassen
+r103pc50;UBUNTU1204 VMS BEAMER ZUPDATE
+r105pc50;UBUNTU1204 VMS BEAMER ZUPDATE
+r106pc50;UBUNTU1204 VMS BEAMER ZUPDATE
+
+
+## Sprechzimmer
+r120pc51;UBUNTU1204 ZUPDATE
+r121pc51;UBUNTU1204 ZUPDATE
+
+                                                                  ##
+####################################################################
+
+
+####################################################################
+####################################################################
+## Floor 02 Floor 02 Floor 02 Floor 02 Floor 02 Floor 02 Floor 02 ##
+####################################################################
+####################################################################
+                                                                  ##
+
+## Einzelgeräte Floor 02 Einzelgeräte Floor 02 Einzelgeräte ########
+
+## Raum 201 - Raum 203
+
+#r20;UBUNTU1204 ZUPDATE
+
+## Raum 209 - Raum 211 Biologie
+
+r209pc50;UBUNTU1204 VMS BEAMER ZUPDATE
+r211pc50;UBUNTU1204 VMS BEAMER ZUPDATE
+
+                                                                  ##
+####################################################################
+
+
+####################################################################
+####################################################################
+## Floor 03 Floor 03 Floor 03 Floor 03 Floor 03 Floor 03 Floor 03 ##
+####################################################################
+####################################################################
+                                                                  ##
+
+                                                                  ##
+####################################################################
+
+
+####################################################################
+####################################################################
+## Floor 04 Floor 04 Floor 04 Floor 04 Floor 04 Floor 04 Floor 04 ##
+####################################################################
+####################################################################
+                                                                  ##
+
+## Einzelgeräte Floor 04 Einzelgeräte Floor 04 Einzelgeräte ########
+
+r405pc51;UBUNTU1204 ZUPDATE
+
+r406pc51;UBUNTU1204 ZUPDATE
+
+                                                                  ##
+####################################################################

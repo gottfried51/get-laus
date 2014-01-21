@@ -1,0 +1,35 @@
+<monitors version="1">
+  <configuration>
+      <clone>yes</clone>
+      <output name="VGA1">
+          <vendor>SAN</vendor>
+          <product>0xbe51</product>
+          <serial>0x01010101</serial>
+          <width>1024</width>
+          <height>768</height>
+          <rate>60</rate>
+          <x>256</x>
+          <y>256</y>
+          <rotation>normal</rotation>
+          <reflect_x>no</reflect_x>
+          <reflect_y>no</reflect_y>
+          <primary>yes</primary>
+      </output>
+      <output name="HDMI1">
+          <vendor>AOC</vendor>
+          <product>0xa784</product>
+          <serial>0x00002da4</serial>
+          <width>1280</width>
+          <height>1024</height>
+          <rate>75</rate>
+          <x>0</x>
+          <y>0</y>
+          <rotation>normal</rotation>
+          <reflect_x>no</reflect_x>
+          <reflect_y>no</reflect_y>
+          <primary>no</primary>
+      </output>
+      <output name="DP1">
+      </output>
+  </configuration>
+</monitors>

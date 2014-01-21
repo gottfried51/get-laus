@@ -1,0 +1,10 @@
+[add_mkhomedir]
+pam_session=session	[default=1]	pam_permit.so
+    session		requisite	pam_deny.so
+    session		required	pam_permit.so
+    session 		optional	pam_umask.so
+    session		required	pam_mkhomedir.so
+    session		required	pam_unix.so 
+    session		optional	pam_winbind.so 
+    session		optional	pam_ldap.so 
+    session		optional	pam_ck_connector.so nox11

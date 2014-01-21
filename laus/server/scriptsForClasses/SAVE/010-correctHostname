@@ -1,0 +1,22 @@
+#! /bin/bash
+
+## get local IP - Number
+IP=$(ifconfig  eth0 | grep 'inet ' | cut -d: -f2 | awk '{ print $1}')
+## try to get HOSTNAME from DNS
+DNSHOSTNAME=$(nslookup $IP | grep 'name = '| awk '{ print $4}' | cut -d. -f1 )
+
+## if HOSTNAME from DNS empty nothing to do => exit
+if [[ -z $DNSHOSTNAME ]]; then
+	exit 0
+fi
+
+## if HOSTNAME from DNS is HOSTNAME from local file hostname nothing to do => exit
+if [ $(hostname) = $DNSHOSTNAME ]; then
+	exit 0
+else
+##  else: if HOSTNAME from DNS is diffrent from HOSTNAME from local file hostname
+##  set HOSTNAME from DNS in file /etc/hostname and in /etc/hosts
+	echo "$DNSHOSTNAME" > /etc/hostname
+        sed "/127.0.1.1/ c\127.0.1.1	$DNSHOSTNAME" -i /etc/hosts
+	init 6
+fi

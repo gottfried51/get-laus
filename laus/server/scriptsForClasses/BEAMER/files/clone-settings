@@ -1,0 +1,17 @@
+# 
+# Define default options for Monitor - Clone - Mode
+#
+# SLEEP_TIME Waiting Time in Script
+#            /usr/bin/clonelate
+#            to execute Switch - Script 
+#            /usr/bin/clone 
+#            in Background
+#
+SLEEP_TIME=3
+#
+# RESOLUTION for Monitor - Clone - Mode
+# 0x0 for Autodedection of Maximum Resolution
+#
+RESOLUTION=0x0
+
+

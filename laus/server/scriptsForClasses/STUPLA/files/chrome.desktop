@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=chromium-browser --kiosk --no-default-browser-check --disable-translate --disk-cache-dir=/dev/null --disk-cache-size=1 http://suppl/supplierplan.php;
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=View Stundenplan
+Comment=Stundenplan

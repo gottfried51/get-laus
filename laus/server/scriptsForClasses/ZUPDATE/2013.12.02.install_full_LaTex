@@ -1,0 +1,13 @@
+#! /bin/bash
+
+
+if [ $(lsb_release -r -s) = "12.04" ];
+then
+  add-apt-repository -y ppa:texlive-backports/ppa
+fi
+
+apt-get -y update
+
+apt-get -y install texmaker
+apt-get -y install kile
+apt-get -y install texlive texlive-lang-german texlive-doc-de texlive-latex-extra 
